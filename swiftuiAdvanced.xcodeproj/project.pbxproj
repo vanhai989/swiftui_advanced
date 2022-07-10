@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC3858D9287A70FD00EA2E64 /* FutureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3858D8287A70FD00EA2E64 /* FutureView.swift */; };
+		CC3858DB287A710B00EA2E64 /* FutureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3858DA287A710B00EA2E64 /* FutureViewModel.swift */; };
+		CC3858DD287A711B00EA2E64 /* FutureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3858DC287A711B00EA2E64 /* FutureService.swift */; };
 		CCAC271B28794A1B00DFA283 /* swiftuiAdvancedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAC271A28794A1B00DFA283 /* swiftuiAdvancedApp.swift */; };
 		CCAC271D28794A1B00DFA283 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAC271C28794A1B00DFA283 /* ContentView.swift */; };
 		CCAC271F28794A1F00DFA283 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCAC271E28794A1F00DFA283 /* Assets.xcassets */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC3858D8287A70FD00EA2E64 /* FutureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutureView.swift; sourceTree = "<group>"; };
+		CC3858DA287A710B00EA2E64 /* FutureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutureViewModel.swift; sourceTree = "<group>"; };
+		CC3858DC287A711B00EA2E64 /* FutureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutureService.swift; sourceTree = "<group>"; };
 		CCAC271728794A1B00DFA283 /* swiftuiAdvanced.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftuiAdvanced.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCAC271A28794A1B00DFA283 /* swiftuiAdvancedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftuiAdvancedApp.swift; sourceTree = "<group>"; };
 		CCAC271C28794A1B00DFA283 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +44,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC3858D7287A706700EA2E64 /* futures */ = {
+			isa = PBXGroup;
+			children = (
+				CC3858D8287A70FD00EA2E64 /* FutureView.swift */,
+				CC3858DA287A710B00EA2E64 /* FutureViewModel.swift */,
+				CC3858DC287A711B00EA2E64 /* FutureService.swift */,
+			);
+			path = futures;
+			sourceTree = "<group>";
+		};
 		CCAC270E28794A1B00DFA283 = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +73,7 @@
 		CCAC271928794A1B00DFA283 /* swiftuiAdvanced */ = {
 			isa = PBXGroup;
 			children = (
+				CC3858D7287A706700EA2E64 /* futures */,
 				CCAC272828794A4D00DFA283 /* combine */,
 				CCAC271A28794A1B00DFA283 /* swiftuiAdvancedApp.swift */,
 				CCAC271C28794A1B00DFA283 /* ContentView.swift */,
@@ -156,7 +173,10 @@
 			files = (
 				CCAC272E28794B4800DFA283 /* CombineService.swift in Sources */,
 				CCAC271D28794A1B00DFA283 /* ContentView.swift in Sources */,
+				CC3858DD287A711B00EA2E64 /* FutureService.swift in Sources */,
+				CC3858DB287A710B00EA2E64 /* FutureViewModel.swift in Sources */,
 				CCAC271B28794A1B00DFA283 /* swiftuiAdvancedApp.swift in Sources */,
+				CC3858D9287A70FD00EA2E64 /* FutureView.swift in Sources */,
 				CCAC272C28794B3E00DFA283 /* CombineViewModel.swift in Sources */,
 				CCAC272A28794B2C00DFA283 /* CombineView.swift in Sources */,
 			);
