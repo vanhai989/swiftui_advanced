@@ -17,7 +17,19 @@ class CombineViewModel: ObservableObject {
     var cancellables = Set<AnyCancellable>()
     @Published var err: String = ""
     init() {
-        addSubscribers()
+//        addSubscribers()
+        myCombine()
+    }
+    
+    func myCombine() {
+        service.$basicPublisher
+            .sink { completion in
+    
+            } receiveValue: { data in
+                print("data combine \(data)")
+                self.data = data
+            }
+
     }
     
     func addSubscribers () {

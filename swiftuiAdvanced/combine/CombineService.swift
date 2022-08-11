@@ -10,7 +10,7 @@ import Combine
 
 
 class CombineService {
-//    @Published var basicPublisher: [String] = []
+    @Published var basicPublisher: [String] = []
 //    @Published var stringPublisher: String = ""
 //    let currentValuePublisher = CurrentValueSubject<String, Never>("first publish")
 //    @Published var passThroughPublisher = PassthroughSubject<String, Error>()
@@ -19,7 +19,12 @@ class CombineService {
     @Published var intPublisher = PassthroughSubject<Int?, Error>()
     
     init() {
-        publishFakeData()
+//        publishFakeData()
+        basicCombine()
+    }
+    
+    func basicCombine() {
+        basicPublisher = ["1", "2", "3"]
     }
     
     // fake get data from the api
