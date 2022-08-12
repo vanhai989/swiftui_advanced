@@ -13,7 +13,8 @@ struct ContentView: View {
 //        FutureView()
 //        DependencyInjectionView()
 //        CoreDataView()
-        CoreDataRelationshipsView()
+//        CoreDataRelationshipsView()
+        LocalNotificationView()
     }
 }
 

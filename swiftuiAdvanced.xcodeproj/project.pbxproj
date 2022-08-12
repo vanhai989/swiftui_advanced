@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC01290728A6580D00F98255 /* LocalNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC01290628A6580D00F98255 /* LocalNotificationView.swift */; };
 		CC02436F288C02C800C2F8CC /* ModifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC02436E288C02C800C2F8CC /* ModifierView.swift */; };
 		CC024372288C06EF00C2F8CC /* CustomStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC024371288C06EF00C2F8CC /* CustomStyleView.swift */; };
 		CC024375288C0A4900C2F8CC /* Extendsions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC024374288C0A4900C2F8CC /* Extendsions.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC01290628A6580D00F98255 /* LocalNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationView.swift; sourceTree = "<group>"; };
 		CC02436E288C02C800C2F8CC /* ModifierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifierView.swift; sourceTree = "<group>"; };
 		CC024371288C06EF00C2F8CC /* CustomStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStyleView.swift; sourceTree = "<group>"; };
 		CC024374288C0A4900C2F8CC /* Extendsions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extendsions.swift; sourceTree = "<group>"; };
@@ -70,6 +72,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC01290528A657DA00F98255 /* localNotification */ = {
+			isa = PBXGroup;
+			children = (
+				CC01290628A6580D00F98255 /* LocalNotificationView.swift */,
+			);
+			path = localNotification;
+			sourceTree = "<group>";
+		};
 		CC02436D288C02AA00C2F8CC /* modifier */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +160,7 @@
 		CCAC271928794A1B00DFA283 /* swiftuiAdvanced */ = {
 			isa = PBXGroup;
 			children = (
+				CC01290528A657DA00F98255 /* localNotification */,
 				CC63624328A4B5DB0048425F /* coreDataRelationShips */,
 				CC97D8D728A3EE9000D91756 /* coreData */,
 				CC024373288C0A2B00C2F8CC /* extendsion */,
@@ -287,6 +298,7 @@
 				CCFCE2C328A0BB0C00B23296 /* UIViewRepresentableBootcamp.swift in Sources */,
 				CCFCE2C528A0C1E800B23296 /* UIViewRepresentableText.swift in Sources */,
 				CCAC271B28794A1B00DFA283 /* swiftuiAdvancedApp.swift in Sources */,
+				CC01290728A6580D00F98255 /* LocalNotificationView.swift in Sources */,
 				CCF8CA402887FC67006976A1 /* ProtocolViewModel.swift in Sources */,
 				CC3858D9287A70FD00EA2E64 /* FutureView.swift in Sources */,
 				CC3858E2287ACED600EA2E64 /* DependencyInjectionViewModel.swift in Sources */,
