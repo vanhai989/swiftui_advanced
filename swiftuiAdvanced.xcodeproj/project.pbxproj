@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5FB1E9717CFC6BE311FB71A0 /* Pods_swiftuiAdvanced.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA9E8233EF4B42702788AD4 /* Pods_swiftuiAdvanced.framework */; };
 		CC01290728A6580D00F98255 /* LocalNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC01290628A6580D00F98255 /* LocalNotificationView.swift */; };
 		CC02436F288C02C800C2F8CC /* ModifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC02436E288C02C800C2F8CC /* ModifierView.swift */; };
 		CC024372288C06EF00C2F8CC /* CustomStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC024371288C06EF00C2F8CC /* CustomStyleView.swift */; };
@@ -34,6 +35,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0865995B7AC150EBC53228B9 /* Pods-swiftuiAdvanced.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftuiAdvanced.release.xcconfig"; path = "Target Support Files/Pods-swiftuiAdvanced/Pods-swiftuiAdvanced.release.xcconfig"; sourceTree = "<group>"; };
+		85FC7E4873D1901BA9D7C810 /* Pods-swiftuiAdvanced.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftuiAdvanced.debug.xcconfig"; path = "Target Support Files/Pods-swiftuiAdvanced/Pods-swiftuiAdvanced.debug.xcconfig"; sourceTree = "<group>"; };
+		ABA9E8233EF4B42702788AD4 /* Pods_swiftuiAdvanced.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftuiAdvanced.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC01290628A6580D00F98255 /* LocalNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationView.swift; sourceTree = "<group>"; };
 		CC02436E288C02C800C2F8CC /* ModifierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifierView.swift; sourceTree = "<group>"; };
 		CC024371288C06EF00C2F8CC /* CustomStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStyleView.swift; sourceTree = "<group>"; };
@@ -66,12 +70,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FB1E9717CFC6BE311FB71A0 /* Pods_swiftuiAdvanced.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CB259A7DAC454043CA477F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABA9E8233EF4B42702788AD4 /* Pods_swiftuiAdvanced.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6D799A69D38F88238EFCA09 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85FC7E4873D1901BA9D7C810 /* Pods-swiftuiAdvanced.debug.xcconfig */,
+				0865995B7AC150EBC53228B9 /* Pods-swiftuiAdvanced.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CC01290528A657DA00F98255 /* localNotification */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +168,8 @@
 			children = (
 				CCAC271928794A1B00DFA283 /* swiftuiAdvanced */,
 				CCAC271828794A1B00DFA283 /* Products */,
+				C6D799A69D38F88238EFCA09 /* Pods */,
+				1CB259A7DAC454043CA477F2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -222,9 +246,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CCAC272528794A1F00DFA283 /* Build configuration list for PBXNativeTarget "swiftuiAdvanced" */;
 			buildPhases = (
+				F84C454B174DC758B57D2BA3 /* [CP] Check Pods Manifest.lock */,
 				CCAC271328794A1B00DFA283 /* Sources */,
 				CCAC271428794A1B00DFA283 /* Frameworks */,
 				CCAC271528794A1B00DFA283 /* Resources */,
+				F7EF7CFFD44FE63A84B29745 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,6 +285,9 @@
 				Base,
 			);
 			mainGroup = CCAC270E28794A1B00DFA283;
+			packageReferences = (
+				CCDBCCD228A89261001FD31D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = CCAC271828794A1B00DFA283 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -279,6 +308,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F7EF7CFFD44FE63A84B29745 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-swiftuiAdvanced/Pods-swiftuiAdvanced-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-swiftuiAdvanced/Pods-swiftuiAdvanced-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-swiftuiAdvanced/Pods-swiftuiAdvanced-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F84C454B174DC758B57D2BA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-swiftuiAdvanced-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CCAC271328794A1B00DFA283 /* Sources */ = {
@@ -429,6 +500,7 @@
 		};
 		CCAC272628794A1F00DFA283 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85FC7E4873D1901BA9D7C810 /* Pods-swiftuiAdvanced.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -462,6 +534,7 @@
 		};
 		CCAC272728794A1F00DFA283 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0865995B7AC150EBC53228B9 /* Pods-swiftuiAdvanced.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -515,6 +588,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CCDBCCD228A89261001FD31D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCVersionGroup section */
 		CC63624628A4B6110048425F /* CoreDataRelationshipsContainer.xcdatamodeld */ = {

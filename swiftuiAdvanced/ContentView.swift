@@ -9,12 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-//        CombineView()
+        CombineView()
 //        FutureView()
 //        DependencyInjectionView()
 //        CoreDataView()
 //        CoreDataRelationshipsView()
-        LocalNotificationView()
+//        LocalNotificationView()
     }
 }
 
